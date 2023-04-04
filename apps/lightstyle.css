@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 	color: #fff;
 	font-family: 'Poppins', sans-serif;
+	transition: 0.5s;
 }
 
 :root {
