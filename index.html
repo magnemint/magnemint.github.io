@@ -17,12 +17,16 @@
     <title>Portfolio | Magnemint</title>
 </head>
 <body>
+    <!-- Blob -->
+    <div id="blob"></div>
+    <div id="blur"></div>
+
     <!-- Navbar -->
     <header>
         <div class="nav">
             <ul>
                 <li class="list active">
-                    <a href="#">
+                    <a href="#home">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -57,15 +61,54 @@
         </div>
     </header>
 
+    <!-- Home -->
+    <section>
+        <div class="hero" id="home">
+            <h2><span class="title">Magnemint</span></h2>
+            <h2>I'm a <span class="me"></span></h2>
+        </div>
+    </section>
+
     <!-- CSS Style Changer Button -->
-    <div>
-        <button class="cssbtn"></button>
+    <div class="cssbtndiv">
+        <ion-icon class="cssbtn" name="contrast-outline"></ion-icon>
     </div>
     
     <!-- Javascript Imports -->
 
     <!-- My JS File-->
     <script src="./apps/js/main.js"></script>
+
+    <!-- Type Writer Effect -->
+    <script>
+    var typed = new Typed('.me', {
+        strings: [
+        "YouTuber",
+        "Web Developer",
+        "Game Enthusiast",
+        "Entrepreneur"
+        ],
+        typeSpeed: 65,
+        backSpeed: 75,
+        loop: true,
+        smartBackspace: true
+    });
+    </script>
+
+    <!-- Blob -->
+    <script>
+        var blob = document.getElementById("blob")
+
+        document.addEventListener('mousemove', function(e){
+        var x = e.clientX;
+        var y = e.clientY;
+
+        blob.animate({
+            left: x + "px",
+            top: y + "px"
+        }, { duration: 2000, fill: "forwards" });
+        })
+    </script>
 
     <!-- Ionicons-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
