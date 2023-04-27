@@ -159,6 +159,10 @@ header {
 	line-height: 1.2;
 }
 
+.hero .lower-text {
+	text-align: center;
+} 
+
 .hero .title {
 	color: var(--darkgreen);
 	font-size: 5.5em;
