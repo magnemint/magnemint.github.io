@@ -154,6 +154,10 @@ header {
 	color: var(--white);
 }
 
+.hero .lower-text {
+	text-align: center;
+} 
+
 .hero .title {
 	color: var(--lime);
 	font-size: 5.5em;
