@@ -1,0 +1,80 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Basic HTML/CSS */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  margin: 0rem;
+  overflow: hidden;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header/Navbar */
+
+header {
+  align-self: center;
+}
+
+.navbar {
+  height: 100vh;
+  width: 100%;
+  align-self: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  transition: 0.5s ease;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Basketball Gallery CSS */
+
+#track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  user-select: none;
+}
+
+#track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  border-radius: 15px;
+}
