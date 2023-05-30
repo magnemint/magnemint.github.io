@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    color: black;
+    background-color: grey;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    animation: transitionIn 0.75s;
+    text-decoration: none;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    size: 5px;
+    cursor: pointer;
+    margin: 25px 0;
+    margin-left: -20px;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 15;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: cyan;
+    font-size: 14px;
+    transition: .5s ease;
+}
+nav ul li a:hover{
+    color: blue;
+    font-size: 16px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.col-1{
+    flex-basis: 50%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-3{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.col-3 h3{
+    font-size: 20px;
+    color: black;
+    font-weight: 300;
+    margin: 11px 0 10px;
+}
+.col-1 h2{
+    font-size: 54px;
+    color: black;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: black;
+    font-weight: 300;
+    margin: 11px 0 10px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+button{
+    margin-top: 65px;
+    width: 150px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button img{
+    width: 30px;
+    display: none;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+}
+button:hover img{
+    display: block;
+}
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col-2{
+    flex-basis: 40%;
+    position: relative;
+    margin-right: 50px;
+}
+.col-2 h4{
+    font-size: 25px;
+    color: darkcyan;
+    font-weight: 500;
+}
+.social-links img{
+    height: 17px;
+    margin: 20px;
+    cursor: pointer;
+}
+.social-links{
+    text-align: center;
+}
+.social-links h4{
+    font-size: 15px;
+}
+.sourcelabel{
+    font-size: 17px;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 72px;
+    margin-top: 12px;
+}
+.sourcelabel h2{
+    font-size: 54px;
+}
+.sourcelabel h3{
+    font-size: 30px;
+    color: black;
+    font-weight: 300;
+    margin: 11px 0 10px;
+}
+.sourcelabel p{
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+.row201{
+    font-size: 17px;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 72px;
+    margin-top: 12px;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.social-links > .fb:hover {
+    transform: scale(1.3);
+}
+
+@media only screen and (max-width:700px) {
+
+    .logo{
+        width: 45px;
+        cursor: pointer;
+        margin: 17px 0;
+        margin-left: 145px;
+    }
+    nav ul{
+        width: 100%;
+        background: linear-gradient(to right, #fb5283, #ff3527);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-top: 65px;
+        margin-bottom: 15px;;;
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 35px;
+    }
+    .col-1 h3{
+        font-size: 15px;
+    }
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | AMF</title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+            <div class="navbar">
+                <a href="home.html"><img src="image/android-chrome-512x512.png" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="donate.html">Donate to AMF</a></li>
+                        <li><a href="goal.html">Goal</a></li>
+                        <li><a href="sources.html">Sources</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="row">
+                <div class="col-1">
+                    <h2>Donate</h2>
+                    <h3>Are you feeling generous? If so, consider donating to the AMF! Every dollar helps, and by donating, even if it's a net, you are contributing to saving a perfect life.<br></h3>
+                    <form>
+                        <button formaction="https://www.againstmalaria.com/Donation.aspx">Donate Now!<img src="image/arrow.png"></button>
+                    </form>
+                </div>
+                <div class="col-2">
+                    <h4>AMF accepts:<br>-> Online Donations<br>-> Bank Transfers<br>-> Cheques (Mail)<br>-> Bitcoin Transfer</h4>
+                </div>
+            </div>            
+        </div>
+
+        <div class="social-links">
+            <h4>Follow their social medias:</h4>
+            <a href="https://www.facebook.com/AgainstMalaria"><img src="image/fb.png"></a>
+            <a href="https://twitter.com/againstmalaria"><img src="image/tw.png"></a>
+            <a href="https://www.youtube.com/againstmalaria"><img src="image/yt.png"></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var blob = document.getElementById("blob")
+
+        document.addEventListener('mousemove', function(e){
+            var x = e.clientX;
+            var y = e.clientY;
+
+            blob.animate({
+                left: x + "px",
+                top: y + "px"
+            }, { duration: 2000, fill: "forwards" });
+        })
+    </script>
+</body>
+</html>

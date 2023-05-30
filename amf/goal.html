@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Goal | AMF</title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+            <div class="navbar">
+                <a href="home.html"><img src="image/android-chrome-512x512.png" class="logo"></a>
+               <nav>
+                   <ul id="menuList">
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="donate.html">Donate to AMF</a></li>
+                        <li><a href="goal.html">Goal</a></li>
+                        <li><a href="sources.html">Sources</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <h2>Our <span class="magic">
+                        <span class="magic-text">
+                            Goal</span></span></h2>
+                    <h3>Our goal is to get reduce the impact that malaria has on our planet.</h3>
+                 <!--<button type="button">Learn More<img src="image/arrow.png"></button>-->
+                </div>
+                <div class="col-2">
+                    <h3>Impact of Malaria (data and embed sourced from<br><a href="https://ourworldindata.org/malaria">OurWorldInData.org):</h3></a>
+                    <iframe src="https://ourworldindata.org/grapher/global-malaria-deaths-by-world-region" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="col-3">
+                    <h3>The WHO has provided global estimates of the number of people who die from malaria since the start of the twenty-first century. From 896,000 deaths in 2000 to 562,000 deaths in 2015, the worldwide death toll decreased by over 40% between those years. Progress has since slowed. Because of the disruptions brought on by the Coronavirus pandemic, mortality actually rose in 2020. 2
+
+                        Malaria affects Africa more than any other part of the world; in 2019, 96% of all malaria-related fatalities worldwide happened there. Yet, Africa has also made the most advancements globally: the number of deaths has drastically decreased since 2000.</h3>
+                </div>
+            </div>
+
+          <div class="social-links">
+                <h4>Follow their social medias:</h4>
+                    <a href="https://www.facebook.com/AgainstMalaria"><img src="image/fb.png"></a>
+                    <a href="https://twitter.com/againstmalaria"><img src="image/tw.png"></a>
+                    <a href="https://www.youtube.com/againstmalaria"><img src="image/yt.png"></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var blob = document.getElementById("blob")
+
+        document.addEventListener('mousemove', function(e){
+            var x = e.clientX;
+            var y = e.clientY;
+
+            blob.animate({
+                left: x + "px",
+                top: y + "px"
+            }, { duration: 2000, fill: "forwards" });
+        })
+    </script>
+</body>
+</html>
